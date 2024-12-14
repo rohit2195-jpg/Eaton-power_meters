@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Meter Guide</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="public/style.css">
+  
+
+      <style>
+          body  {
+              background-image: url("Eaton_Corporation_Logo.svg");
+              background-size: min(150vw, 150vh);
+              background-position: center 300px; /* Centered horizontally, 300px down from the top */
+              background-repeat: no-repeat;
+              min-height: 150vh; /* Ensure body minimum height is 150% of the viewport height */
+          }
+      </style>
+
+ 
+  </head>
+  <body>
+   
+
+    <form id="loginForm">
+    <div class="dropdown">
+      <span>Applications</span>
+      <div class="dropdown-content">
+        <label
+          ><input type="checkbox" name="school" id="school" value="1" />School</label
+        >
+        <label
+          ><input type="checkbox" name="options" id="hotel" value="1" />Hotels</label
+        >
+        <label
+          ><input type="checkbox" name="options" id="building" value="1" />Buidings</label
+        >
+        <label
+          ><input type="checkbox" name="options" id="industrial" value="1" />Industrial Environment/Automation</label
+        >
+
+        <label
+          ><input type="checkbox" name="options" id="rail" value="1" />Rail Transport</label
+        >
+
+        <label
+          ><input type="checkbox" name="options" id="distribution" value="1" />Distribution Cabinet</label
+        >
+
+        
+        <label
+          ><input type="checkbox" name="options" id="power" value="1" />Power Distribution Automation</label
+        >
+
+        <label
+          ><input type="checkbox" name="options" id="electric" value="1" />Electric Switch Gear and Control Panels</label
+        >
+        
+        
+
+        <label
+          ><input type="checkbox" name="options" id="building_automation" value="1" /> Building Automation</label
+        >
+        
+        <label
+          ><input type="checkbox" name="options" id="marine" value="1" /> Marine Applications</label
+        >
+
+        <label
+          ><input type="checkbox" name="options" id="renewable" value="1" /> Renewable Energy</label
+        >
+      
+      <label
+        ><input type="checkbox" name="options" id="tenant" value="1" /> Tenant Metering</label
+      >
+
+        <label
+          ><input type="checkbox" name="options" id="commercial" value="1" /> Commercial Metering</label
+        >
+
+        <label
+          ><input type="checkbox" name="options" id="residential" value="1" /> Residential Metering</label
+        >
+
+        <label
+          ><input type="checkbox" name="options" id="data" value="1" /> Data Center</label
+        >
+        
+      </div>
+    </div>
+
+
+
+      
+    <div class="dropdown">
+      <span>Sensing Inputs</span>
+      <div class="dropdown-content">
+        <label
+          ><input type="radio" id="3" name="inputs" value="1" />3</label
+        >
+        <label
+          ><input type="radio" id="4" name="inputs" value="2" />4</label
+        >
+        <label
+          ><input type="radio" id="60" name="inputs" value="3" />Up to 60</label
+        >
+        <label
+          ><input type="radio" id="100" name="inputs" value="4" />Up to 100</label
+        >
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <span>Features</span>
+      <div class="dropdown-content">
+        <label
+          ><input type="checkbox" name="options" id="Real" value="1" />Real Time Metering</label
+        >
+        
+        <label
+          ><input type="checkbox" name="options" id="health"value="1" />Health Moniter</label
+        >
+        <label
+          ><input type="checkbox" name="options" id ="time" value="1" />Time of Use</label
+        >
+        <label
+          ><input type="checkbox" name="options" id="daylight" value="1" />Daylight savings</label>
+
+        <label
+          ><input type="checkbox" name="options" id="waveform" value="1" />Waveform Capture</label>
+
+        <label
+          ><input type="checkbox" name="options" id="quality" value="1" />Power quality</label>
+
+        <label
+          ><input type="checkbox" name="options" id="datalogging" value="1" />On Board Data Logging</label>
+
+        <label
+          ><input type="checkbox" name="options" id="pulse" value="1" />Pulse Metering</label>
+        <label
+          ><input type="checkbox" name="options" id="sag/swell" value="1" />Sag/Swell Recording</label>
+
+        <label
+          ><input type="checkbox" name="options" id="transient" value="1" />Transient Recording (6MHZ)</label>
+
+        <label
+          ><input type="checkbox" name="options" id="harmonic" value="1" />Harmonic Distortion</label>
+
+        <label
+          ><input type="checkbox" name="options" id="remote" value="1" />Remote Power Controle</label>
+
+        <label
+          ><input type="checkbox" name="options" id="websoftware" value="1" />Onboard web-based software</label>
+
+        <label
+          ><input type="checkbox" name="options" id="overload" value="1" />Overload Alerts</label>
+
+
+
+
+
+
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <span>Cost</span>
+      <div class="dropdown-content">
+        <label
+          ><input type="radio" id="$" name="cost" value="1" />$</label>
+
+        <label
+          ><input type="radio" id="$$" name="cost" value="2" />$$</label>
+
+        <label
+          ><input type="radio" id="$$$" name="cost" value="3" />$$$</label>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <span>Display Options</span>
+      <div class="dropdown-content">
+        <label
+        ><input type="radio" name="display" id="LCD Display"value="1" />LCD Display</label
+        >
+        <label
+          ><input type="radio" name="display" id ="20D LCD Display" value="2" />20 LCD Display</label
+        >
+        <label
+          ><input type="radio" name="display" id="Website" value="4" />Transmits to Website</label
+        >
+        <label
+          ><input type="radio" name="display" id="Color Touchscreen" value="5" />Color Touchscreen</label
+        >
+        
+      </div>
+    </div>
+      <button type="submit" id="submitButton">Submit</button>
+  </form>
+    <div id="popupA">
+      <h2>
+        <form>
+    <label for="fillName"><span id="recommendationSpot">recommendation</span> is recommended</label>
+            </form>
+          </h2>
+      <label>Click here to learn more about <span id="recommendationSpotButton">recommendation</span> </label>
+
+      <button id="closeButton" onclick=closeResultPopup()>Close</button>
+     
+
+    </div>
+
+    <script src="script.js"></script>
+
+    
+  </body>
+</html>
+

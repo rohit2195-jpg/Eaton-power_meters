@@ -1,0 +1,153 @@
+/* Reset some basic elements for consistency */
+body,
+div,
+span,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Basic styling */
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  padding: 20px;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #a0a0c0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 25%;
+}
+
+.dropdown:hover {
+  background-color: #f0f0f0;
+}
+
+/* Dropdown label or title styling */
+.dropdown>span {
+  color: #111;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a0a0c0;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+  left: 100%; /* Displaying content sideways */
+  top: 0;
+
+  /* Multi-column layout properties */
+  column-count: auto; /* Adjust the number of columns based on content and width */
+  column-gap: 20px; /* Spacing between columns */
+  max-height: 300px; /* Maximum height before starting a new column */
+  overflow: auto; /* Add scroll if content overflows */
+}
+
+
+
+
+/* Style for each option in the dropdown */
+.dropdown-content label {
+  display: block;
+  background-color: #a0a0c0
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  /* subtle separator */
+}
+
+/* Hover state for dropdown options */
+.dropdown-content label:hover,
+.dropdown-content label:focus-within {
+  background-color: #3476c5;
+  /* Light blue background for hover/focus */
+}
+
+/* Checkbox customization */
+.dropdown-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Last child border removal */
+.dropdown-content label:last-child {
+  border-bottom: none;
+}
+
+/* Add definition box */
+.dropdown-content label::after {
+  content: "Definition: Your definition here"; /* Add your definition text */
+  display: none;
+  position: absolute;
+  background-color:#a0a0c0;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: -30px; /* Position above label */
+  left: 100%; /* Align to right of label */
+}
+/* Show definition box on hover */
+.dropdown-content label:hover::after {
+  display: block;
+}
+/* Optional: Add more styles here for other elements as needed */
+
+/* for computers */
+@media screen and (min-width: 1200px) {
+#popupA {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffffff;
+  padding: 5px;
+  border: 1px solid #000000;
+  z-index: 9999;
+  color: #000000;
+  width: 100%;
+  max-width: 50%;
+  height: 40vh;
+  font-size: 30px;
+}
+}
+
+/* for phones */
+@media screen and (max-width: 1199px) {
+#popupA {
+  display: none;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffffff;
+  padding: 5px;
+  border: 1px solid #000000;
+  z-index: 9999;
+  color: #000000;
+  width: 100%;
+  max-width: 75%;
+  height: 60vh;
+  font-size: 60px;
+}
+}
